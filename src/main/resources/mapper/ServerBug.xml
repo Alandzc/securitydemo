@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.gok.mapper.ServerBugMapper">
+  <resultMap id="BaseResultMap" type="cn.gok.entity.ServerBug">
+    <id column="id" property="id" />
+    <result column="ip" property="ip" />
+    <result column="port" property="port" />
+    <result column="content" property="content" />
+    <result column="type_radio" property="typeRadio" />
+    <result column="create_time" property="createTime" />
+    <result column="state_radio" property="stateRadio" />
+    <result column="user" property="user" />
+    <result column="solve_cont" property="solveCont" />
+    <result column="user_id" property="userId" />
+  </resultMap>
+  <!-- 通用查询结果列 -->
+  <sql id="Base_Column_List">
+    id,ip,port,content,type_radio,create_time,state_radio,user,solve_cont,user_id
+  </sql>
+
+</mapper>
